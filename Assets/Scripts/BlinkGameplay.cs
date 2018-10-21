@@ -24,7 +24,7 @@ public class BlinkGameplay : MonoBehaviour {
 
         ViewInput(Input.GetButton("Fire1"), Input.GetButton("Fire2"));
 
-        if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2") || Input.GetButtonUp("Fire1"), Input.GetButtonUp("Fire2")) 
+        if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2") || Input.GetButtonUp("Fire1") || Input.GetButtonUp("Fire2")) 
         {
             DoBlink();
         }
@@ -76,6 +76,6 @@ public class BlinkGameplay : MonoBehaviour {
 
     public void DoBlink()
     {
-        CameraFade.StartAlphaFade(Color.black, false, .05f);
+        CameraFade.StartAlphaFade(Color.black, false, .3f);
     }
 }
